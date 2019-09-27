@@ -1,7 +1,26 @@
-@import 'fonts.css';
-.header{
+@import "fonts.css";
+.header {
   background-image: url(../img/header.png);
-  background-size:cover;
+  background-size: cover;
   background-position: 0 100%;
   padding: 180px 0;
+}
+
+.text {
+  display: none;
+}
+
+div[filter]:hover img {
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+}
+
+div[filter]:hover .text {
+  display: block;
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  text-align: center;
+  width: 100%;
 }
